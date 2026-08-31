@@ -11,6 +11,7 @@ Right now I am working on [CodeRook](https://github.com/kyletser/coderook), a lo
 | Project | What it does |
 | --- | --- |
 | [CodeRook](https://github.com/kyletser/coderook) | Local-first coding agent with TUI and web clients backed by one persistent daemon |
+| [CoursePilot](https://github.com/kyletser/coursepilot) | Course learning agent that grounds Q&A and study paths in teacher-reviewed material and knowledge graphs |
 | [work-hunter](https://github.com/kyletser/work-hunter) | Local job-search assistant that ranks roles and keeps a human approval step before outreach |
 | [Plinth](https://github.com/kyletser/plinth) | Local runtime for inspectable agent workflows, durable run evidence, and explicit effect authorization |
 
