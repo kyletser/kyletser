@@ -3,37 +3,60 @@
 </p>
 
 <p align="center">
-  <a href="#selected-projects">Projects</a> &nbsp; / &nbsp;
-  <a href="#merged-contributions">Open source</a> &nbsp; / &nbsp;
+  <a href="#selected-projects">01 · Projects</a> &nbsp; / &nbsp;
+  <a href="#merged-contributions">02 · Open source</a> &nbsp; / &nbsp;
+  <a href="#engineering-focus">03 · Engineering</a> &nbsp; / &nbsp;
   <a href="https://github.com/kyletser?tab=repositories">Repositories</a>
 </p>
 
-I build **agent systems and developer tools**, with a focus on state, recovery, and observable execution. My current projects explore local-first coding agents and evidence-grounded learning agents.
+I build **agent systems that can be inspected, tested, and recovered** — from local-first coding tools to knowledge-grounded learning agents.
 
-`Python` · `TypeScript` · `Agent runtimes` · `MCP` · `Knowledge graphs`
+<p>
+  <code>Python</code> <code>TypeScript</code> <code>Agent runtimes</code> <code>MCP</code> <code>Knowledge graphs</code>
+</p>
+
+<p><strong>Upstream contributions merged in</strong><br />
+<a href="https://github.com/microsoft/agent-framework/pull/7839">Microsoft Agent Framework</a> &nbsp; · &nbsp;
+<a href="https://github.com/openai/openai-agents-js/pull/1827">OpenAI Agents SDK</a> &nbsp; · &nbsp;
+<a href="https://github.com/vectorize-io/hindsight/pull/4203">Hindsight</a> &nbsp; · &nbsp;
+<a href="https://github.com/apache/maka/pull/3644">Apache Maka</a></p>
 
 ## Selected projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3>01 / CodeRook</h3>
+<p><sub>01 / BUILD &amp; EXECUTE</sub></p>
+<h3><a href="https://github.com/kyletser/coderook">CodeRook ↗</a></h3>
 <p><strong>A local-first coding agent.</strong></p>
 <p>Durable sessions, explicit permissions, reviewable changes, and evidence-backed runs. TUI and web clients share a persistent daemon.</p>
 <p><code>Agent runtime</code> <code>Developer tools</code></p>
-<a href="https://github.com/kyletser/coderook">Explore CodeRook →</a>
+<p><a href="https://github.com/kyletser/coderook#readme">Overview</a> · <a href="https://github.com/kyletser/coderook/tree/HEAD">Source</a></p>
 </td>
 <td width="50%" valign="top">
-<h3>02 / CoursePilot</h3>
+<p><sub>02 / RETRIEVE &amp; LEARN</sub></p>
+<h3><a href="https://github.com/kyletser/coursepilot">CoursePilot ↗</a></h3>
 <p><strong>A knowledge-grounded learning agent.</strong></p>
 <p>Course Q&amp;A and study paths grounded in teacher-reviewed material, with knowledge graphs and reproducible evaluation reports.</p>
 <p><code>Retrieval</code> <code>Knowledge graphs</code></p>
-<a href="https://github.com/kyletser/coursepilot">Explore CoursePilot →</a>
+<p><a href="https://github.com/kyletser/coursepilot#readme">Overview</a> · <a href="https://github.com/kyletser/coursepilot/tree/HEAD">Source</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<p><sub>03 / ORCHESTRATE &amp; INSPECT</sub></p>
+<h3><a href="https://github.com/kyletser/plinth">Plinth ↗</a></h3>
+<p>A local runtime for inspectable agent workflows and durable run evidence.</p>
+<p><code>Workflow runtime</code> <code>Run evidence</code></p>
+</td>
+<td width="50%" valign="top">
+<p><sub>04 / RANK &amp; REVIEW</sub></p>
+<h3><a href="https://github.com/kyletser/work-hunter">work-hunter ↗</a></h3>
+<p>A local job-search assistant with AI ranking and human approval before outreach.</p>
+<p><code>Human-in-the-loop</code> <code>Applied agents</code></p>
 </td>
 </tr>
 </table>
-
-Also building [work-hunter](https://github.com/kyletser/work-hunter), a job-search assistant with human approval before outreach, and [Plinth](https://github.com/kyletser/plinth), an inspectable workflow runtime with durable run evidence.
 
 ## Merged contributions
 
@@ -58,10 +81,16 @@ Selected contributions to upstream agent frameworks and runtime tooling. Each li
 
 </details>
 
-### Under review
+### Contribution pipeline
 
-Submitted work, **not merged contributions**. Links lead to the live upstream discussions.
+Beyond the merged work above, my submitted patches cover agent memory, MCP, SOP discovery, browser tooling, and execution reliability.
 
+<details>
+<summary><strong>Explore submitted patches →</strong></summary>
+
+These submissions are separate from the merged contributions above. Follow each link for its current upstream status and review history.
+
+- [Hindsight #4334](https://github.com/vectorize-io/hindsight/pull/4334) — isolate background Git stderr so failed probes do not corrupt the Pi host TUI.
 - [Hindsight #4333](https://github.com/vectorize-io/hindsight/pull/4333) — validate card candidates so memory redaction preserves technical numbers and UUIDs.
 - [OpenHands SDK #4717](https://github.com/OpenHands/software-agent-sdk/pull/4717) — launch-time skill overlays for profile-based ACP agents.
 - [OpenHands Docs #770](https://github.com/OpenHands/docs/pull/770) — companion documentation for launch-time overlays.
@@ -72,11 +101,17 @@ Submitted work, **not merged contributions**. Links lead to the live upstream di
 - [TencentDB Agent Memory #1141](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/1141) — propagate knowledge-server startup failures.
 - MiniCode — [configuration precedence #45](https://github.com/LiuMengxuan04/MiniCode/pull/45), [unchanged-file read deduplication #46](https://github.com/LiuMengxuan04/MiniCode/pull/46), and [context compaction / retry #48](https://github.com/LiuMengxuan04/MiniCode/pull/48).
 
-### Engineering focus
+</details>
 
-`01 / State & recovery` — session boundaries, checkpoints, and resumable workflows.<br />
-`02 / Tools & protocols` — MCP, browser execution, and human approval paths.<br />
-`03 / Memory & evidence` — committed facts, retrieval, and reproducible tests.
+## Engineering focus
+
+| Boundary | What I work on | Upstream example |
+| :--- | :--- | :--- |
+| **State → Recovery** | Fresh-run isolation, checkpoints, resumable execution | [Microsoft: workflow state](https://github.com/microsoft/agent-framework/pull/7839) |
+| **Action → Observation** | Tool execution, approval paths, useful feedback | [OpenAI: Computer Use screenshots](https://github.com/openai/openai-agents-js/pull/1827) |
+| **Write → Completion** | Commit ordering, lifecycle cleanup, reliable evidence | [Hindsight: retain completion](https://github.com/vectorize-io/hindsight/pull/4203) |
+
+<p><sub>My review checklist: reproduce the failure → add a regression test → verify the fix → check the failure returns without it.</sub></p>
 
 ---
 
