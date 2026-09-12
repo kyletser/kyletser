@@ -9,6 +9,8 @@
   <a href="https://github.com/kyletser?tab=repositories">Repositories</a>
 </p>
 
+<p align="center"><strong>English</strong> &nbsp; · &nbsp; <a href="./README.zh-CN.md">简体中文</a></p>
+
 I build **agent systems that can be inspected, tested, and recovered** — from local-first coding tools to knowledge-grounded learning agents.
 
 <p>
@@ -28,18 +30,18 @@ I build **agent systems that can be inspected, tested, and recovered** — from 
 <td width="50%" valign="top">
 <p><sub>01 / BUILD &amp; EXECUTE</sub></p>
 <h3><a href="https://github.com/kyletser/coderook">CodeRook ↗</a></h3>
-<p><strong>A local-first coding agent.</strong></p>
+<p><strong>A local-first coding agent.</strong> <code>Public beta</code></p>
 <p>Durable sessions, explicit permissions, reviewable changes, and evidence-backed runs. TUI and web clients share a persistent daemon.</p>
 <p><code>Agent runtime</code> <code>Developer tools</code></p>
-<p><a href="https://github.com/kyletser/coderook#readme">Overview</a> · <a href="https://github.com/kyletser/coderook/tree/HEAD">Source</a></p>
+<p><a href="https://github.com/kyletser/coderook/releases/tag/v0.2.0-beta.1">Try the beta</a> · <a href="https://github.com/kyletser/coderook/blob/HEAD/docs/reference/FUNCTIONAL_ARCHITECTURE.md">Architecture</a></p>
 </td>
 <td width="50%" valign="top">
 <p><sub>02 / RETRIEVE &amp; LEARN</sub></p>
 <h3><a href="https://github.com/kyletser/coursepilot">CoursePilot ↗</a></h3>
-<p><strong>A knowledge-grounded learning agent.</strong></p>
+<p><strong>A knowledge-grounded learning agent.</strong> <code>MVP</code></p>
 <p>Course Q&amp;A and study paths grounded in teacher-reviewed material, with knowledge graphs and reproducible evaluation reports.</p>
 <p><code>Retrieval</code> <code>Knowledge graphs</code></p>
-<p><a href="https://github.com/kyletser/coursepilot#readme">Overview</a> · <a href="https://github.com/kyletser/coursepilot/tree/HEAD">Source</a></p>
+<p><a href="https://github.com/kyletser/coursepilot#readme">Run locally</a> · <a href="https://github.com/kyletser/coursepilot/blob/HEAD/docs/evaluation/agent-evaluation-2026-09-05.md">Evaluation</a></p>
 </td>
 </tr>
 <tr>
@@ -57,6 +59,14 @@ I build **agent systems that can be inspected, tested, and recovered** — from 
 </td>
 </tr>
 </table>
+
+<details>
+<summary><strong>Go deeper: architecture, evaluation, and limitations</strong></summary>
+
+- **CodeRook:** [runtime architecture](https://github.com/kyletser/coderook/blob/HEAD/docs/reference/FUNCTIONAL_ARCHITECTURE.md), [threat model](https://github.com/kyletser/coderook/blob/HEAD/docs/reference/THREAT_MODEL.md), and [release scorecard](https://github.com/kyletser/coderook/blob/HEAD/docs/status/RELEASE_SCORECARD.md). The public beta is not a stable v1 release; offline fixtures are not model-quality benchmarks.
+- **CoursePilot:** [frozen evaluation](https://github.com/kyletser/coursepilot/blob/HEAD/docs/evaluation/agent-evaluation-2026-09-05.md) and [Qwen3 fine-tuning experiment](https://github.com/kyletser/coursepilot/blob/HEAD/docs/evaluation/qwen3-final-report.md). Reports include sample sizes and limitations; fine-tuning is an experiment, not a claim of across-the-board improvement.
+
+</details>
 
 ## Merged contributions
 
