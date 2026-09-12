@@ -62,6 +62,7 @@ Selected contributions to upstream agent frameworks and runtime tooling. Each li
 
 Submitted work, **not merged contributions**. Links lead to the live upstream discussions.
 
+- [Hindsight #4333](https://github.com/vectorize-io/hindsight/pull/4333) — validate card candidates so memory redaction preserves technical numbers and UUIDs.
 - [OpenHands SDK #4717](https://github.com/OpenHands/software-agent-sdk/pull/4717) — launch-time skill overlays for profile-based ACP agents.
 - [OpenHands Docs #770](https://github.com/OpenHands/docs/pull/770) — companion documentation for launch-time overlays.
 - [MCP TypeScript SDK #2699](https://github.com/modelcontextprotocol/typescript-sdk/pull/2699) — bounded validator caching for schemas without usable IDs.
