@@ -39,6 +39,16 @@ Also building [work-hunter](https://github.com/kyletser/work-hunter), a job-sear
 
 Selected contributions to upstream agent frameworks and runtime tooling. Each link includes the implementation and review history.
 
+<p align="center">
+  <a href="https://github.com/microsoft/agent-framework/pull/7839"><img src="./assets/microsoft.svg" width="49%" alt="Microsoft Agent Framework: merged PR #7839" /></a>
+  <a href="https://github.com/vectorize-io/hindsight/pull/4203"><img src="./assets/hindsight.svg" width="49%" alt="Hindsight: merged PR #4203" /></a>
+  <a href="https://github.com/openai/openai-agents-js/pull/1827"><img src="./assets/openai.svg" width="49%" alt="OpenAI Agents SDK JS: merged PR #1827" /></a>
+  <a href="https://github.com/apache/maka/pull/3644"><img src="./assets/maka.svg" width="49%" alt="Apache Maka: merged PR #3644" /></a>
+</p>
+
+<details>
+<summary>Technical details of the merged work</summary>
+
 | Upstream | Contribution | PR |
 | :--- | :--- | :---: |
 | **Microsoft · Agent Framework** | Declarative DevUI message input, fresh-run state isolation, and deterministic checkpoint regression tests | [#7839 ↗](https://github.com/microsoft/agent-framework/pull/7839) |
@@ -46,17 +56,26 @@ Selected contributions to upstream agent frameworks and runtime tooling. Each li
 | **OpenAI · Agents SDK JS** | Remove redundant Computer Use screenshots; cover direct execution, approval resume, and replay | [#1827 ↗](https://github.com/openai/openai-agents-js/pull/1827) |
 | **Apache Maka** | Close SQLite stores before test workspace cleanup on Windows | [#3644 ↗](https://github.com/apache/maka/pull/3644) |
 
-<details>
-<summary><strong>More contributions · follow the upstream review</strong></summary>
-<br />
+</details>
+
+### Under review
+
+Submitted work, **not merged contributions**. Links lead to the live upstream discussions.
 
 - [OpenHands SDK #4717](https://github.com/OpenHands/software-agent-sdk/pull/4717) — launch-time skill overlays for profile-based ACP agents.
+- [OpenHands Docs #770](https://github.com/OpenHands/docs/pull/770) — companion documentation for launch-time overlays.
 - [MCP TypeScript SDK #2699](https://github.com/modelcontextprotocol/typescript-sdk/pull/2699) — bounded validator caching for schemas without usable IDs.
 - [Strands Agent SOP #78](https://github.com/strands-agents/agent-sop/pull/78) — deterministic recursive discovery of external SOPs.
+- [Browser Harness #659](https://github.com/browser-use/browser-harness/pull/659) — detect windowless Chrome before the browser handshake.
+- [CLI-Anything #455](https://github.com/HKUDS/CLI-Anything/pull/455) — FreeCAD primitive center-of-mass calculations and project reload regressions.
+- [TencentDB Agent Memory #1141](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/1141) — propagate knowledge-server startup failures.
+- MiniCode — [configuration precedence #45](https://github.com/LiuMengxuan04/MiniCode/pull/45), [unchanged-file read deduplication #46](https://github.com/LiuMengxuan04/MiniCode/pull/46), and [context compaction / retry #48](https://github.com/LiuMengxuan04/MiniCode/pull/48).
 
-These are separate from the merged contributions above. Follow each PR for its current status.
+### Engineering focus
 
-</details>
+`01 / State & recovery` — session boundaries, checkpoints, and resumable workflows.<br />
+`02 / Tools & protocols` — MCP, browser execution, and human approval paths.<br />
+`03 / Memory & evidence` — committed facts, retrieval, and reproducible tests.
 
 ---
 

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="180" viewBox="0 0 560 180" role="img" aria-labelledby="title">
+<title id="title">Hindsight #4203: Commit-aware completion events. Merged.</title>
+<rect x="1" y="1" width="558" height="178" rx="16" fill="#101827" stroke="#2d3a51"/>
+<rect x="1" y="24" width="3" height="132" rx="1" fill="#a78bfa"/>
+<g font-family="'Segoe UI',Arial,sans-serif">
+<text x="26" y="35" fill="#a78bfa" font-size="11" letter-spacing="2">AGENT MEMORY</text>
+<text x="26" y="80" fill="#f1f5ff" font-size="30" font-weight="650">Hindsight</text>
+<text x="26" y="113" fill="#b2bfd4" font-size="15">Commit-aware completion events</text>
+<text x="26" y="151" fill="#a78bfa" font-family="Consolas,monospace" font-size="13">#4203 / code + review history ↗</text>
+<rect x="443" y="23" width="92" height="25" rx="12" fill="#25213d" stroke="#625087"/>
+<text x="489" y="40" fill="#d8c5ff" font-size="11" text-anchor="middle">MERGED</text>
+</g></svg>
